@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "b" {
   acl    = "public"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "nagasbucket"
     Environment = "Dev"
   }
 }
