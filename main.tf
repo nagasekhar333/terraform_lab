@@ -1,6 +1,6 @@
 provider "aws" {
   profile = "myaws"
-  region  = var.region
+  region  = ap-south-1
 }
 
 
