@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "b" {
-  bucket = "myawsbucket12345554555"
+  bucket = "arn:aws:s3:::nagasbucket"
   acl    = "public"
 
   tags = {
