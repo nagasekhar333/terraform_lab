@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "b" {
-  bucket = "arn:aws:s3:::nagasbucket"
+  bucket = "nagasbucket"
   acl    = "public"
 
   tags = {
@@ -14,6 +14,6 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-variable "region" {
+variable "ap-south-1" {
   
 }
