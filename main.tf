@@ -1,13 +1,19 @@
+provider "aws" {
+  profile = "myaws"
+  region  = var.region
+}
+
+
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
+  bucket = "myawsbucket12345554555"
+  acl    = "private"
 
   tags = {
-    Name        = "nagasbucket"
+    Name        = "My bucket"
     Environment = "Dev"
   }
 }
 
-resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.b.id
-  acl    = "public"
+variable "region" {
+  
 }
