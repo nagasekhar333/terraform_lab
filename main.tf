@@ -1,12 +1,5 @@
-provider "aws" {
-  profile = "myaws"
-  region  = ap-south-1
-}
-
-
 resource "aws_s3_bucket" "b" {
-  bucket = "nagasbucket"
-  acl    = "public"
+  bucket = "my-tf-test-bucket"
 
   tags = {
     Name        = "nagasbucket"
@@ -14,6 +7,7 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-variable "ap-south-1" {
-  
+resource "aws_s3_bucket_acl" "example" {
+  bucket = aws_s3_bucket.b.id
+  acl    = "public"
 }
