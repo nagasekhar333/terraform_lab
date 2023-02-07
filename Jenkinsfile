@@ -1,4 +1,4 @@
-properties([parameters([choice(choices: ['ap-south-1', 'ap-south-2', ap-south-3'], description: 'Select in which region you want to deploy the resource ??', name: 'region')])])
+properties([parameters([choice(choices: ['us-east-2', 'us-east-1', 'us-west-1'], description: 'Select in which region you want to deploy the resource ??', name: 'region')])])
 pipeline{
     
     agent any 
