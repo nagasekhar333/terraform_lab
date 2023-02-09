@@ -5,15 +5,15 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "b" {
-  bucket = "myawsbucket12345554555"
+  bucket = "nagasbucket"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "nagasbucket"
     Environment = "Dev"
   }
 }
 
 variable "region" {
-  
+  ap-south-1
 }
