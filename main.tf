@@ -1,6 +1,6 @@
 provider "aws" {
   profile = "myaws"
-  region  = var.region
+  region  = "ap-south-1"
 }
 
 
@@ -12,8 +12,4 @@ resource "aws_s3_bucket" "b" {
     Name        = "nagasbucket"
     Environment = "Dev"
   }
-}
-
-variable "region" {
-  region = "ap-south-1"
 }
