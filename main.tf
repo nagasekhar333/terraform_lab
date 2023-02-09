@@ -15,5 +15,5 @@ resource "aws_s3_bucket" "b" {
 }
 
 variable "region" {
-  ap-south-1
+  region = "ap-south-1"
 }
